@@ -1,0 +1,40 @@
+[cStatFile]
+cFile =4
+cVirus =0
+cVirDelEura =0
+cVirQur =0
+cVirIgEura =0
+EuraLast =pagefile.sys
+EuraLastTime =5/30/2019 9:26:02 PM
+EurLastUp =-
+TxtLog =C:\Program Files (x86)\Eura_AV_Portable\Logs
+LastThreat=Threat not found
+
+[Config]
+ESaveLblHeurIco =On
+ESaveLblMedia =Off
+ESaveLblMetUp =Day
+ESaveLblProRem =On
+ESaveLblScript =On
+ESaveLblSplash =Off
+EScanChkSum =On
+EScanMem =Off
+EScanMemMod =On
+EScanUp =On
+ESetFixReg =On
+ESetLblAksi1 =Abai1
+ESetLblAksi2 =Bersih2
+ESetLblPE =On
+EuraGur =On
+EuraStart =On
+StealSta =Off
+SoundRTP =On
+EuCom=PopupSyncId0
+
+[Update]
+ESetUpDb =Off
+ESetAutoUp =On
+EAutoSend =On
+
+[TempPath]
+InstallDir =

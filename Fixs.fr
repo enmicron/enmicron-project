@@ -1,0 +1,62 @@
+[Version]
+Signature="$Chicago$"
+Provider=Enmicron Lab
+Author="Dodo Anthony (aNtH)"
+ 
+[DefaultInstall]
+AddReg=UnhookRegKey
+DelReg=del
+ 
+[UnhookRegKey]
+HKLM, Software\CLASSES\exefile\shell\open\command,,,"""%1"" %*"
+HKLM, Software\CLASSES\batfile\shell\open\command,,,"""%1"" %*"
+HKLM, Software\CLASSES\comfile\shell\open\command,,,"""%1"" %*"
+HKLM, Software\CLASSES\exefile\shell\open\command,,,"""%1"" %*"
+HKLM, Software\CLASSES\piffile\shell\open\command,,,"""%1"" %*"
+HKLM, Software\CLASSES\regfile\shell\open\command,,,"regedit.exe "%1""
+HKLM, Software\CLASSES\scrfile\shell\open\command,,,"""%1"" %*"
+HKLM, Software\CLASSES\lnkfile\shell\open\command,,,"""%1"" %*"
+HKLM, Software\CLASSES\exefile\DefaultIcon,,,"%1"
+
+HKLM, SYSTEM\ControlSet001\Control\SafeBoot, AlternateShell,0, "cmd.exe"
+HKLM, SYSTEM\ControlSet002\Control\SafeBoot, AlternateShell,0, "cmd.exe"
+HKLM, SYSTEM\CurrentControlSet\Control\SafeBoot, AlternateShell,0, "cmd.exe"
+HKLM, SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon, Shell,0, "Explorer.exe"
+HKCU, Control Panel\International, s1159,0, "AM"
+HKCU, Control Panel\International, s2359,0, "PM"
+HKCU, Control Panel\Keyboard\KeyboardDelay", "1"
+HKLM, SOFTWARE\Classes\exefile,,,"Application"
+HKLM, SOFTWARE\Classes\txtfile,,,"Text Document"
+HKLM, SOFTWARE\Classes\jpgfile,,,"JPEG Image"
+HKLM, SOFTWARE\Classes\scrfile,,,"Screen Saver"
+HKLM, SOFTWARE\Classes\comfile,,,"JPEG Image"
+HKLM, SOFTWARE\Classes\bmpfile,,,"Bitmap Image"
+HKLM, SOFTWARE\Classes\xlsfile,,,"Microsoft Excel Worksheet"
+HKLM, SOFTWARE\Classes\docfile,,,"Microsoft Word Document"
+HKLM, SOFTWARE\Classes\regfile,,,"Registration Entries"
+HKCU, Control Panel\Desktop,SCRNSAVE.EXE ,0, 
+ 
+[del]
+HKCU, Software\Microsoft\Windows\CurrentVersion\Policies\Explorer, NoCDBurning
+HKCU, Software\Microsoft\Windows\CurrentVersion\Policies\Explorer, NoFind
+HKCU, Software\Microsoft\Windows\CurrentVersion\Policies\System
+HKCU, Software\Microsoft\Windows\CurrentVersion\Run, AutoRun
+HKCU, Software\Microsoft\Windows\CurrentVersion\Run, MSMSGS
+HKCU, Software\Microsoft\Windows\CurrentVersion\Policies\Explorer, NoFolderOptions
+HKLM, Software\Microsoft\Windows\CurrentVersion\Run, System Monitoring
+HKLM, Software\Microsoft\Windows\CurrentVersion\Policies\Explorer, NoFolderOptions
+HKLM, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableRegistryTools
+HKLM, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableTaskMgr
+HKLM, SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore,DisableSR 
+HKLM, SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore, DisableConfig
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Run, System Monitoring
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system, DisableCMD
+HKLM, SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon, LegalNoticeText
+HKLM, SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon, LegalNoticeCaption
+HKLM, SOFTWARE\Policies\Microsoft\Windows\Installer, LimitSystemRestoreCheckpointing
+HKLM, SOFTWARE\Policies\Microsoft\Windows\Installer, DisableMSI
+HKLM, SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore, DisableConfig
+HKLM, SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore, DisableSR
+HKLM, SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore, DisableSR 
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\{6c3f1d85-67dd-11dc-9a68-806d6172696f}
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\{6c3f1d86-67dd-11dc-9a68-806d6172696f}
